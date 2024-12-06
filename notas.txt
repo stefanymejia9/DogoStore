@@ -1,0 +1,39 @@
+  <div class="form-container">
+            <h1 class="title">Mi cuenta</h1>
+            <img src="./assets/icons/usuario2.png" alt="icon-user" class="icon-user">
+            <form action="/" class="form">
+                <label for="name" class="label">Nombre</label>
+                <input type="text" id="name" placeholder="Doggie" class="input input-nombre">
+                
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="email" id="email" placeholder="Doggie@..." class="input input-email">
+                
+                <label for="dob" class="label">Fecha de nacimiento</label>
+                <input type="date" id="dob" class="input input-calendario">
+                
+                <label for="region" class="label">Región</label>
+                <select id="region" class="input input-region">
+                    <option value="Bogota">Bogotá</option>
+                    <option value="Medellin">Medellín</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Pereira">Pereira</option>
+                    <option value="SantaMarta">Santa Marta</option>
+                    <option value="Manizales">Manizales</option>
+                    <!-------------- ciudades ----------------->
+                </select>
+                
+                <label for="phone-number" class="label">Número de celular</label>
+                <input type="tel" id="phone-number" placeholder="123-456-7890" class="input input-numero-celular">
+                
+                <label for="new-password" class="label">Contraseña</label>
+                <input type="password" id="new-password" placeholder="********" class="input input-password">
+                
+                <input type="submit" value="Crear" class="primary-button login-button">
+            </form>
+
+            <div id="error-message" class="error-message"></div>
+            <!-- Mensaje de error para validar año del usuario-->
+        </div>

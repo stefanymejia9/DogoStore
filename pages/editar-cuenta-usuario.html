@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!----Favicon----->
+    <link rel="shortcut icon" href="../assets/logo/logo-dogostore.png" type="img">
+    <!----Stylesheet----->
+    <link href="../styles/editar-cuenta-usuario.css" rel="stylesheet" type="text/css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!---------------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogoStore</title>
+</head>
+
+<body>
+
+    <!--editar-cuenta-->
+    <div class="editar-cuenta">
+
+        <div class="form-container">
+
+            <h1 class="title">Mi cuenta</h1>
+
+            <img src="../assets/icons/usuario2.png" alt="icon-user" class="icon-user">
+
+            <form action="/" class="form">
+                <div class="row">
+                    <label for="name" class="label">Nombre</label>
+                    <input type="text" id="name" placeholder="Doggie" class="input input-nombre" required>
+            
+                    <label for="email" class="label">Correo electrónico</label>
+                    <input type="text" id="email" placeholder="Doggie@..." class="input input-email" required>
+            
+                    <label for="password" class="label">Contraseña</label>
+                    <input type="password" id="password" placeholder="********" class="input input-password" required>
+            
+                    <label for="region" class="label">Región</label>
+                    <select id="region" class="opcion" required>
+                        <option value="" disabled selected></option>
+                        <option value="Bogota">Bogotá</option>
+                        <option value="Medellin">Medellín</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Pereira">Pereira</option>
+                        <option value="SantaMarta">Santa Marta</option>
+                        <option value="Manizales">Manizales</option>
+                    </select>
+
+                    <label for="metodo-pago" class="label">Métodos de Pago</label>
+                    <select id="metodo-pago" name="metodos_pago" class="opcion" required>
+                        <option value="" disabled selected></option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="fisico">Físico</option>
+                        <option value="ambas">Ambas</option>
+                    </select>
+ 
+                </div>
+            
+                <div class="row">
+                    <label for="phone-number" class="label">Número de celular</label>
+                    <input type="text" id="phone-number" placeholder="123-456-7890" class="input input-numero-celular" required>
+            
+                    <label for="direccion" class="label">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ej. Calle 123 #45-67" class="input input-direccion" required>
+            
+                    <label for="barrio" class="label" >Barrio</label>
+                    <input type="text" id="barrio" name="barrio" placeholder="Ej. Chapinero" class="input input-barrio" required>
+            
+                    <label for="genero" class="label">Género</label>
+                    <select id="genero" name="genero" class="opcion" required>
+                        <option value="" disabled selected></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+            
+                    <label for="dob" class="label">Fecha de nacimiento</label>
+                    <input type="date" id="dob" class="input opcion" required>
+                </div>       
+                
+            </form>
+
+            <input type="submit" value="Editar" class="secondary-button create-button">
+            
+        </div>
+    </div>
+
+    <!--Js-->
+    <script src="../script/editar-cuenta-usuario.js"></script>
+</body>
+
+</html>

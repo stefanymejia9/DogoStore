@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!----Favicon----->
+    <link rel="shortcut icon" href="../assets/logo/logo-dogostore.png" type="img">
+    <!----Stylesheet----->
+    <link href="../styles/crear-cuenta-usuario.css" rel="stylesheet" type="text/css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!---------------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogoStore</title>
+</head>
+
+<body>
+
+    <!-- Notificación -->
+    <div id="notification" class="notification">
+        <img src="../assets/img/mensaje-perrito.png" alt="" class="notificacion-img" width="500px" height="80px">
+        <span class="close" id="close">&times;</span>
+    </div>
+    
+    <!--Login-->
+    <div class="cuenta">
+
+        <div class="form-container">
+
+            <h1 class="title">Mi cuenta</h1>
+
+            <img src="../assets/icons/usuario2.png" alt="icon-user" class="icon-user">
+
+            <form action="/" class="form">
+
+                <label for="name" class="label">Nombre</label>
+                <input type="text" id="name" placeholder="Doggie" class="input input-nombre">
+
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="text" id="email" placeholder="Doggie@..." class="input input-email">
+
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="********" class="input input-password">
+
+                <label for="password-confirm" class="label">Confirmar contraseña</label>
+                <input type="password" id="password-confirm" placeholder="********" class="input input-password-confirm">
+
+                <input type="submit" value="Crear" class="primary-button create-button">
+
+            </form>
+
+        </div>
+        
+    </div>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="../script/notificacion-crear-cuenta.js"></script>
+
+</body>
+
+</html>
